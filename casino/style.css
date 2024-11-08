@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+
+body#lobby-page{
+  background-image: url('https://img.freepik.com/free-photo/whisky-glass-with-ice-cubes-gambling-table_23-2147881233.jpg?t=st=1731052074~exp=1731055674~hmac=54971fb0e648332eb338fdf705b6c88badd9c53841a44ec9201a3ee8d84cbdae&w=996');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+body#slots-page {
+  background-image: url('https://img.freepik.com/free-vector/slot-machine-with-golden-coins-poker-cards_107791-28903.jpg?t=st=1731051720~exp=1731055320~hmac=5a5cdf10b3214b9540786ab01623c71231bdbd0335c3b42d893bb3dc696fd99b&w=996');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+body#blackjack-page {
+  background-image: url('https://img.freepik.com/free-vector/gradient-poker-table-background_23-2151085425.jpg?t=st=1731051802~exp=1731055402~hmac=bafd57fffbe47ee1245398b59af0121ff4afc5db4822432c09e0af20b9e1a7ac&w=996');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#casino {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  color: #ffcc00;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+#display {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+#reel1, #reel2, #reel3 {
+  padding: 0 10px;
+}
+
+#balance {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+#spinButton, #dealButton {
+  padding: 15px 40px;
+  font-size: 1.2em;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#spinButton {
+  background-color: #d81b60;
+}
+
+#spinButton:hover {
+  background-color: #ad1457;
+  transform: translateY(-2px);
+}
+
+#dealButton {
+  background-color: #1e90ff;
+}
+
+#dealButton:hover {
+  background-color: #4682b4;
+  transform: translateY(-2px);
+}
+
+.game-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.game-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #d81b60;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.game-button:hover {
+  background-color: #ad1457;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.game-button:active {
+  background-color: #880e4f;
+  transform: translateY(2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #444;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #666;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#stopButton {
+  background-color: #FF6347;
+}
+
+#stopButton:hover {
+  background-color: #FF4500;
+}
